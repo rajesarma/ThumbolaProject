@@ -1,0 +1,30 @@
+info:
+  app:
+    name: Thumbola Project
+    java:
+      version: 8
+    type: Spring Boot
+
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+  servlet:
+    context-path: /
+
+spring:
+
+  # IDENTITY ===============================================================================
+  application:
+    name: thumbola
+
+  resources:
+    static-locations: classpath:/static/
+
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+    #async:
+    #  request-timeout: 20
